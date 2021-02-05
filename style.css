@@ -16,7 +16,6 @@ body {
 header {
     height: 150px;
     margin: 0 5%;
-    margin: 0 auto;
     max-width: 1440px;
     display: flex;
     justify-content: space-between;
@@ -101,5 +100,47 @@ header a {
 /* SECTION 2 */
 .section-2 {
     background-color: hsl(218, 28%, 13%);
+    height: 80vh;
+    padding-top: 6%;
+}
+
+.section-2 .container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.section-2 .container div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 7%;
+}
+
+.section-2 .container .object > * {
+    padding: 7px 0px;
+}
+
+.section-2 .container .object > img {
+    height: 80px;
+}
+
+.section-2 .container .object {
+    margin-bottom: 5% 0px;
+}
+
+.section-2 .container p {
+    text-align: center;
+    width: 100%;
+}
+
+/* SECTION 3 */
+.section-3 {
+    background-color: hsl(218, 28%, 13%);
     height: 90vh;
+    display: flex;
+    justify-content: center;
 }
