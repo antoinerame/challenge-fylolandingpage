@@ -15,7 +15,7 @@ body {
 /* HEADER */
 header {
     height: 150px;
-    margin: 0 5%;
+    margin: 0 auto;
     max-width: 1440px;
     display: flex;
     justify-content: space-between;
@@ -45,9 +45,18 @@ header a {
 }
 
 /* SECTIONS */
+section {
+    height: 80vh;
+}
+
+section .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+}
+
 /* SECTION 1 */
 .section-1 {
-    height: 80vh;
     background: url(images/bg-curvy-desktop.svg) no-repeat;
     background-position: bottom;
     background-size: 100% 35%;
@@ -56,11 +65,8 @@ header a {
 .section-1 .container {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    max-width: 1440px;
     align-items: center;
     justify-content: space-around;
-    height: 100%;
     text-align: center;
 }
 
@@ -100,16 +106,16 @@ header a {
 /* SECTION 2 */
 .section-2 {
     background-color: hsl(218, 28%, 13%);
-    height: 80vh;
-    padding-top: 6%;
+    padding-top: 3%;
+    height: 70vh;
 }
 
 .section-2 .container {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
-    margin: 0 auto;
-    width: 60%;
+    align-items: center;
+    width: 45%;
 }
 
 .section-2 .container div {
@@ -132,15 +138,63 @@ header a {
     margin-bottom: 5% 0px;
 }
 
-.section-2 .container p {
+.section-2 .container p, h3 {
     text-align: center;
+    line-height: 20px;
     width: 100%;
 }
 
 /* SECTION 3 */
 .section-3 {
     background-color: hsl(218, 28%, 13%);
-    height: 90vh;
+    height: 50vh;
+}
+
+.section-3 .container {
     display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.section-3 .container .text {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    width: 40%;
+}
+
+.section-3 .container .text > * {
+    padding-bottom: 15px;
+}
+
+.section-3 .container h3 {
+    line-height: 42px;
+    font-size: 32px;
+    text-align: left;
+}
+
+.section-3 .container p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.section-3 .container img {
+    height: 100%;
+}
+
+.section-3 .container a {
+    max-width: 150px;
+    padding-bottom: 3px !important;
+    text-decoration: none;
+    color: hsl(176, 68%, 64%);
+    border-bottom: solid 1px hsl(176, 68%, 64%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-3 .container a:hover {
+    color: white;
+    border-bottom: solid 1px white;
+    filter: saturate(0);
 }
