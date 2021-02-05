@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -10,6 +11,10 @@ body {
     font-size: 14px;
     font-family: 'Raleway';
     color: white;
+}
+
+p, a {
+    font-family: 'Open Sans';
 }
 
 /* HEADER */
@@ -47,6 +52,7 @@ header a {
 /* SECTIONS */
 section {
     height: 80vh;
+    background-color: hsl(218, 28%, 13%);
 }
 
 section .container {
@@ -60,6 +66,7 @@ section .container {
     background: url(images/bg-curvy-desktop.svg) no-repeat;
     background-position: bottom;
     background-size: 100% 35%;
+    background-color: hsl(217, 28%, 15%);
 }
 
 .section-1 .container {
@@ -79,7 +86,7 @@ section .container {
     font-size: 32px;
 }
 
-.section-1 .container h3 {
+.section-1 .container p {
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
@@ -105,7 +112,6 @@ section .container {
 
 /* SECTION 2 */
 .section-2 {
-    background-color: hsl(218, 28%, 13%);
     padding-top: 3%;
     height: 70vh;
 }
@@ -146,7 +152,6 @@ section .container {
 
 /* SECTION 3 */
 .section-3 {
-    background-color: hsl(218, 28%, 13%);
     height: 50vh;
 }
 
@@ -197,4 +202,223 @@ section .container {
     color: white;
     border-bottom: solid 1px white;
     filter: saturate(0);
+}
+
+/* SECTION 4 */
+.section-4 {
+    padding-top: 6%;
+    height: 42vh;
+}
+
+.section-4 .container {
+    background: url(images/bg-quotes.png) no-repeat;
+    padding-top: 3.5vh;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 65%;
+}
+
+.section-4 .container .feedback {
+    background-color: hsl(219, 30%, 18%);
+    padding: 35px 20px;
+    width: 25%;
+    height: 13vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px 0px hsl(217, 28%, 15%);
+    border-radius: 5px;
+}
+
+.section-4 .container .feedback .profil {
+    display: flex;
+}
+
+.section-4 .container .feedback .profil img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.section-4 .container .feedback .profil .profil-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-4 .container .feedback .profil .profil-text p:nth-child(1) {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.section-4 .container .feedback .profil .profil-text p:nth-child(2) {
+    font-size: 10px;
+}
+
+/* SECTION 5 */
+.section-5 {
+    background: linear-gradient(to bottom, hsl(218, 28%, 13%) 50%,hsl(216, 53%, 9%) 50%);
+    height: 40vh;
+}
+
+.section-5 .container {
+    width: 50%;
+    height: 90%;
+    background-color: hsl(217, 28%, 15%);
+    box-shadow: 4px 4px 20px hsl(219deg 27% 8%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-5 .container > * {
+    padding-bottom: 25px;
+}
+
+.section-5 .container h3 {
+    line-height: 42px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.section-5 .container p {
+    width: 70%;
+    height: 20%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.section-5 .container .mail {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-5 .container .mail input {
+    width: 50%;
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: none;
+}
+
+.section-5 .container .mail button {
+    cursor: pointer;
+    border: none;
+    width: 30%;
+    padding: 15px 30px;
+    border-radius: 25px;
+    background-color: hsl(198, 60%, 50%);
+    color: white;
+}
+
+.section-5 .container .mail button:hover {
+    background-color: hsl(176, 68%, 64%);
+}
+
+.section-5 .container .mail input:focus, .section-5 .container .mail button:focus {
+    outline: none;
+}
+
+/* FOOTER */
+footer {
+    height: 40vh;
+    padding-top: 1%;
+    background-color: hsl(216, 53%, 9%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+footer .container .logo {
+    height: 52px;
+    width: 176px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+footer .container .column-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container .column-container > * {
+    width: 10%;
+}
+
+footer .container .column-container .adress {
+    display: flex;
+    justify-content: center;
+    width: 25%;
+}
+
+footer .container .column-container .adress img {
+    width: 25px;
+    height: 20px;
+    padding-right: 10px;
+}
+
+footer .container .column-container ul > li > a, footer .container .column-container li {
+    list-style: none;
+    text-decoration: none;
+    padding-bottom: 15px;
+    color: white;
+}
+
+footer .container .column-container ul > li > a:hover {
+    font-weight: 700;
+}
+
+footer .container .column-container .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+footer .container .column-container .contact > * {
+    display: flex;
+    padding-bottom: 15px;
+}
+
+footer .container .column-container .contact > * > img {
+    padding-right: 15px;
+}
+
+footer .container .column-container .social-media {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .container .column-container .social-media svg {
+    width: 10%;
+    height: 10%;
+    padding: 15px;
+    cursor: pointer;
+    border: 1px white solid;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+footer .container .column-container .social-media svg > path {
+    fill: white;
+}
+
+footer .container .column-container .social-media svg:hover {
+    border: 1px hsl(176, 68%, 64%) solid;
+}
+
+footer .container .column-container .social-media svg:hover > path {
+    fill: hsl(176, 68%, 64%);
 }
