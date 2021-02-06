@@ -149,7 +149,7 @@
   }
 
   .section-2 .container {
-    flex-direction: column;
+    flex-flow: column;
     width: 100%;
   }
 
@@ -198,3 +198,10 @@
     height: 38vh;
   }
 }
+
+@media only screen and (max-width: 344px) {
+  .section-2 {
+    height: 65vh;
+  }
+}
+
